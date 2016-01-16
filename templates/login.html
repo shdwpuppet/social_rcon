@@ -1,0 +1,14 @@
+<html>
+{% include 'header.html' %}
+<body class="hold-transition login-page">
+<div class="login-box">
+  <div class="login-logo">
+    <b>Social</b>rcon
+  </div>
+  <div class="login-box-body text-center">
+    <p class="login-box-msg">Sign in or register</p>
+    <a href="{% url 'social:begin' 'steam' %}?next={{ request.path }}" class="btn btn-default btn-flat"><img src="https://steamcommunity-a.akamaihd.net/public/images/signinthroughsteam/sits_small.png" /></a>
+  </div>
+</div>
+</body>
+</html>
